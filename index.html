@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <div id="playerInput">
+    <h1>Tic Tac Toe</h1>
+    <div class="input-box">
+    <input type="text" id="player1" placeholder="Player 1 Name (X)">
+    <input type="text" id="player2"  placeholder="Player 2 Name (O)">
+    </div>
+    <button class="start-btn" onclick="startGame()">start Game</button>
+    </div>
+    <div class="game-section" id="gameSection">
+        <p class="current-player" id="currentPlayer"></p>
+        <div class="game">
+            <div class="cell" onclick="MekeMove(0)"></div>
+            <div class="cell" onclick="MekeMove(1)"></div>
+            <div class="cell" onclick="MekeMove(2)"></div>
+            <div class="cell" onclick="MekeMove(3)"></div>
+            <div class="cell" onclick="MekeMove(4)"></div>
+            <div class="cell" onclick="MekeMove(5)"></div>
+            <div class="cell" onclick="MekeMove(6)"></div>
+            <div class="cell" onclick="MekeMove(7)"></div>
+            <div class="cell" onclick="MekeMove(8)"></div>
+        </div>
+        <button class="reset" onclick="resetGame()">Reset </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
